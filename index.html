@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Bengal Hotel</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h1 class="m-0">Royal Bengal Hotel</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rooms">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#amenities">Amenities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link login-btn" href="#login">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content text-center">
+            <h1 class="display-4 fw-bold">Welcome to Royal Bengal Hotel</h1>
+            <p class="lead">Experience the finest luxury in the heart of Dhaka</p>
+            <a href="#rooms" class="btn btn-primary btn-lg">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="rooms py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Rooms</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card room-card">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Standard Room">
+                        <div class="card-body">
+                            <h3 class="card-title">Standard Room</h3>
+                            <p class="card-text">Comfortable room with modern amenities</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-bed me-2"></i>1 Queen Bed</li>
+                                <li><i class="fas fa-ruler-combined me-2"></i>28 m²</li>
+                                <li><i class="fas fa-users me-2"></i>2 Adults</li>
+                            </ul>
+                            <p class="price">৳10,000/night</p>
+                            <a href="booking-confirmation.html?roomType=Standard Room&roomPrice=10000&checkIn=&checkOut=&guests=" class="btn btn-primary w-100 book-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card room-card">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Deluxe Room">
+                        <div class="card-body">
+                            <h3 class="card-title">Deluxe Room</h3>
+                            <p class="card-text">Spacious room with city view</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-bed me-2"></i>1 King Bed</li>
+                                <li><i class="fas fa-ruler-combined me-2"></i>35 m²</li>
+                                <li><i class="fas fa-users me-2"></i>2 Adults, 1 Child</li>
+                            </ul>
+                            <p class="price">৳15,000/night</p>
+                            <a href="booking-confirmation.html?roomType=Deluxe Room&roomPrice=15000&checkIn=&checkOut=&guests=" class="btn btn-primary w-100 book-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card room-card">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Executive Suite">
+                        <div class="card-body">
+                            <h3 class="card-title">Executive Suite</h3>
+                            <p class="card-text">Luxury suite with panoramic view</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-bed me-2"></i>1 King Bed + Living Room</li>
+                                <li><i class="fas fa-ruler-combined me-2"></i>45 m²</li>
+                                <li><i class="fas fa-users me-2"></i>2 Adults, 2 Children</li>
+                            </ul>
+                            <p class="price">৳25,000/night</p>
+                            <a href="booking-confirmation.html?roomType=Executive Suite&roomPrice=25000&checkIn=&checkOut=&guests=" class="btn btn-primary w-100 book-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
+                    <div class="card room-card">
+                        <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Presidential Suite">
+                        <div class="card-body">
+                            <h3 class="card-title">Presidential Suite</h3>
+                            <p class="card-text">Ultimate luxury experience</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-bed me-2"></i>2 King Beds + Living Area</li>
+                                <li><i class="fas fa-ruler-combined me-2"></i>90 m²</li>
+                                <li><i class="fas fa-users me-2"></i>4 Adults, 2 Children</li>
+                            </ul>
+                            <p class="price">৳35,000/night</p>
+                            <a href="booking-confirmation.html?roomType=Presidential Suite&roomPrice=35000&checkIn=&checkOut=&guests=" class="btn btn-primary w-100 book-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card room-card">
+                        <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Family Suite">
+                        <div class="card-body">
+                            <h3 class="card-title">Family Suite</h3>
+                            <p class="card-text">Perfect for family stays</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-bed me-2"></i>2 Queen Beds + Kids Room</li>
+                                <li><i class="fas fa-ruler-combined me-2"></i>65 m²</li>
+                                <li><i class="fas fa-users me-2"></i>4 Adults, 3 Children</li>
+                            </ul>
+                            <p class="price">৳28,000/night</p>
+                            <a href="booking-confirmation.html?roomType=Family Suite&roomPrice=28000&checkIn=&checkOut=&guests=" class="btn btn-primary w-100 book-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card room-card">
+                        <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Royal Bengal Suite">
+                        <div class="card-body">
+                            <h3 class="card-title">Royal Bengal Suite</h3>
+                            <p class="card-text">Our most prestigious accommodation</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-bed me-2"></i>2 King Beds + Private Pool</li>
+                                <li><i class="fas fa-ruler-combined me-2"></i>120 m²</li>
+                                <li><i class="fas fa-users me-2"></i>4 Adults, 2 Children</li>
+                            </ul>
+                            <p class="price">৳45,000/night</p>
+                            <a href="booking-confirmation.html?roomType=Royal Bengal Suite&roomPrice=45000&checkIn=&checkOut=&guests=" class="btn btn-primary w-100 book-btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Guest Reviews</h2>
+            <div class="text-center mb-4">
+                <div class="overall-rating">
+                    <span class="display-4 fw-bold">4.8</span>
+                    <div class="stars">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-alt text-warning"></i>
+                    </div>
+                    <p class="text-muted">Based on 256 reviews</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <!-- Local Reviews -->
+                <div class="col-md-4">
+                    <div class="card review-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle me-3" width="50" height="50" alt="Rahim">
+                                <div>
+                                    <h5 class="card-title mb-0">Rahim Khan</h5>
+                                    <small class="text-muted">Dhaka, Bangladesh</small>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text">"অসাধারণ সেবা এবং সুন্দর পরিবেশ। রুমগুলো খুব পরিষ্কার এবং আরামদায়ক। স্টাফরা খুব বন্ধুত্বপূর্ণ।"</p>
+                            <p class="card-text text-muted small">(Translation: Excellent service and beautiful environment. Rooms are very clean and comfortable. Staff is very friendly.)</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- International Reviews -->
+                <div class="col-md-4">
+                    <div class="card review-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://randomuser.me/api/portraits/women/22.jpg" class="rounded-circle me-3" width="50" height="50" alt="Sarah">
+                                <div>
+                                    <h5 class="card-title mb-0">Sarah Johnson</h5>
+                                    <small class="text-muted">London, UK</small>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text">"An amazing cultural experience! The Bengali cuisine was outstanding, and the staff went above and beyond. The traditional spa treatments were incredibly relaxing. A perfect blend of luxury and local culture."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card review-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://randomuser.me/api/portraits/men/45.jpg" class="rounded-circle me-3" width="50" height="50" alt="John">
+                                <div>
+                                    <h5 class="card-title mb-0">John Smith</h5>
+                                    <small class="text-muted">New York, USA</small>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+                            </div>
+                            <p class="card-text">"Exceptional service and modern amenities while maintaining authentic Bengali charm. The rooftop pool offers stunning city views. Great location for exploring Dhaka."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
+                    <div class="card review-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle me-3" width="50" height="50" alt="Fatima">
+                                <div>
+                                    <h5 class="card-title mb-0">Fatima Begum</h5>
+                                    <small class="text-muted">Chittagong, Bangladesh</small>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text">"খাবারগুলো খুব সুস্বাদু এবং রুম সার্ভিস দ্রুত। লবি অত্যন্ত সুন্দর এবং আরামদায়ক।"</p>
+                            <p class="card-text text-muted small">(Translation: The food is delicious and room service is prompt. The lobby is beautiful and comfortable.)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card review-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://randomuser.me/api/portraits/men/28.jpg" class="rounded-circle me-3" width="50" height="50" alt="Hans">
+                                <div>
+                                    <h5 class="card-title mb-0">Hans Weber</h5>
+                                    <small class="text-muted">Berlin, Germany</small>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text">"Ein wunderbares Hotel mit ausgezeichnetem Service! Die Fusion aus bengalischer Tradition und modernem Luxus ist perfekt gelungen."</p>
+                            <p class="card-text text-muted small">(Translation: A wonderful hotel with excellent service! The fusion of Bengali tradition and modern luxury is perfectly achieved.)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card review-card h-100">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://randomuser.me/api/portraits/women/56.jpg" class="rounded-circle me-3" width="50" height="50" alt="Yuki">
+                                <div>
+                                    <h5 class="card-title mb-0">Yuki Tanaka</h5>
+                                    <small class="text-muted">Tokyo, Japan</small>
+                                </div>
+                            </div>
+                            <div class="mb-2">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text">"素晴らしいおもてなしと快適な滞在でした。ベンガル料理も絶品で、スパでのトリートメントも最高でした。"</p>
+                            <p class="card-text text-muted small">(Translation: Wonderful hospitality and comfortable stay. Bengali cuisine was excellent, and the spa treatment was amazing.)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="amenities py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Hotel Amenities</h2>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card amenity-card text-center">
+                        <div class="card-body">
+                            <i class="fas fa-swimming-pool fa-3x mb-3"></i>
+                            <h3 class="card-title">Swimming Pool</h3>
+                            <p class="card-text">Infinity pool with city view</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card amenity-card text-center">
+                        <div class="card-body">
+                            <i class="fas fa-spa fa-3x mb-3"></i>
+                            <h3 class="card-title">Spa & Wellness</h3>
+                            <p class="card-text">Traditional Bengali treatments</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card amenity-card text-center">
+                        <div class="card-body">
+                            <i class="fas fa-utensils fa-3x mb-3"></i>
+                            <h3 class="card-title">Fine Dining</h3>
+                            <p class="card-text">Authentic Bengali cuisine</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card amenity-card text-center">
+                        <div class="card-body">
+                            <i class="fas fa-dumbbell fa-3x mb-3"></i>
+                            <h3 class="card-title">Fitness Center</h3>
+                            <p class="card-text">Modern equipment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form id="contact-form" class="card p-4">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div class="card contact-info p-4">
+                        <h3>Get in Touch</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Gulshan Avenue, Dhaka</p>
+                        <p><i class="fas fa-phone"></i> +880 1234-567890</p>
+                        <p><i class="fas fa-envelope"></i> info@royalbengalhotel.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>About Us</h3>
+                    <p>Royal Bengal Hotel offers the finest accommodations and services in the heart of Dhaka.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white">Home</a></li>
+                        <li><a href="#rooms" class="text-white">Rooms</a></li>
+                        <li><a href="#amenities" class="text-white">Amenities</a></li>
+                        <li><a href="#reviews" class="text-white">Reviews</a></li>
+                        <li><a href="#contact" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p class="mb-0">&copy; 2024 Royal Bengal Hotel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Welcome Back</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="login-form" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                            <div class="invalid-feedback">
+                                Please enter your password.
+                            </div>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="remember-me">
+                            <label class="form-check-label" for="remember-me">Remember me</label>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">Login</button>
+                        </div>
+                    </form>
+                    <div class="text-center mt-3">
+                        <p class="mb-0">Don't have an account? <a href="#" id="showRegisterModal">Register here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Registration Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Create Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="register-form" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="reg-name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="reg-name" required>
+                            <div class="invalid-feedback">
+                                Please enter your name.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="reg-email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="reg-email" required>
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="reg-phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="reg-phone" required>
+                            <div class="invalid-feedback">
+                                Please enter your phone number.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="reg-password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="reg-password" required>
+                            <div class="invalid-feedback">
+                                Please enter a password.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="reg-confirm-password" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="reg-confirm-password" required>
+                            <div class="invalid-feedback">
+                                Passwords do not match.
+                            </div>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">Register</button>
+                        </div>
+                    </form>
+                    <div class="text-center mt-3">
+                        <p class="mb-0">Already have an account? <a href="#" id="showLoginModal">Login here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize modals
+            const loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
+            const registerModal = new bootstrap.Modal(document.getElementById('registerModal'));
+
+            // Show login modal when clicking login button
+            document.querySelector('.login-btn').addEventListener('click', function(e) {
+                e.preventDefault();
+                loginModal.show();
+            });
+
+            // Switch between login and register modals
+            document.getElementById('showRegisterModal').addEventListener('click', function(e) {
+                e.preventDefault();
+                loginModal.hide();
+                registerModal.show();
+            });
+
+            document.getElementById('showLoginModal').addEventListener('click', function(e) {
+                e.preventDefault();
+                registerModal.hide();
+                loginModal.show();
+            });
+
+            // Handle login form submission
+            document.getElementById('login-form').addEventListener('submit', async function(e) {
+                e.preventDefault();
+                if (!this.checkValidity()) {
+                    e.stopPropagation();
+                    this.classList.add('was-validated');
+                    return;
+                }
+
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+
+                try {
+                    await auth.login(email, password);
+                    loginModal.hide();
+                    window.location.reload();
+                } catch (error) {
+                    alert(error.message);
+                }
+            });
+
+            // Handle registration form submission
+            document.getElementById('register-form').addEventListener('submit', async function(e) {
+                e.preventDefault();
+                if (!this.checkValidity()) {
+                    e.stopPropagation();
+                    this.classList.add('was-validated');
+                    return;
+                }
+
+                const userData = {
+                    name: document.getElementById('reg-name').value,
+                    email: document.getElementById('reg-email').value,
+                    phone: document.getElementById('reg-phone').value,
+                    password: document.getElementById('reg-password').value
+                };
+
+                if (userData.password !== document.getElementById('reg-confirm-password').value) {
+                    alert('Passwords do not match');
+                    return;
+                }
+
+                try {
+                    await auth.register(userData);
+                    registerModal.hide();
+                    window.location.reload();
+                } catch (error) {
+                    alert(error.message);
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

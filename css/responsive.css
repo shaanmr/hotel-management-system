@@ -1,0 +1,61 @@
+/* Tablet Styles */
+@media screen and (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .room-card img {
+        height: 200px;
+    }
+
+    .amenity-card {
+        margin-bottom: 1rem;
+    }
+
+    .contact-info {
+        margin-top: 2rem;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .navbar-brand h1 {
+        font-size: 1.5rem;
+    }
+
+    .room-card img {
+        height: 180px;
+    }
+
+    .amenity-card {
+        padding: 1.5rem;
+    }
+
+    .amenity-card i {
+        font-size: 2rem;
+    }
+
+    .contact-info {
+        padding: 1.5rem;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .social-links a {
+        margin: 0 0.5rem;
+    }
+} 

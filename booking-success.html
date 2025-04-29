@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Success - Royal Bengal Hotel</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <h1 class="m-0">Royal Bengal Hotel</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#rooms">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#amenities">Amenities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link login-btn" href="#" id="logoutBtn">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Success Section -->
+    <section class="success-section py-5 mt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <div class="success-animation mb-4">
+                        <i class="fas fa-check-circle text-success fa-5x mb-3"></i>
+                    </div>
+                    <h1 class="mb-4">Thank You for Your Booking!</h1>
+                    <p class="lead mb-4">Your payment has been processed successfully and your booking is confirmed.</p>
+                    <div class="booking-confirmation-details card mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Booking Details</h4>
+                            <div class="row">
+                                <div class="col-md-6 text-start">
+                                    <p><strong>Booking ID:</strong> <span id="bookingId"></span></p>
+                                    <p><strong>Room Type:</strong> <span id="roomType"></span></p>
+                                    <p><strong>Check-in:</strong> <span id="checkIn"></span></p>
+                                    <p><strong>Check-out:</strong> <span id="checkOut"></span></p>
+                                </div>
+                                <div class="col-md-6 text-start">
+                                    <p><strong>Guests:</strong> <span id="guests"></span></p>
+                                    <p><strong>Total Nights:</strong> <span id="nights"></span></p>
+                                    <p><strong>Amount Paid:</strong> <span id="amount"></span></p>
+                                    <p><strong>Payment Status:</strong> <span class="badge bg-success">Confirmed</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="next-steps card mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Next Steps</h4>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="step-item">
+                                        <i class="fas fa-envelope fa-2x mb-3 text-primary"></i>
+                                        <h5>Check Your Email</h5>
+                                        <p>We've sent a confirmation email with all booking details</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="step-item">
+                                        <i class="fas fa-calendar-check fa-2x mb-3 text-primary"></i>
+                                        <h5>Save the Date</h5>
+                                        <p>Add your booking dates to your calendar</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="step-item">
+                                        <i class="fas fa-concierge-bell fa-2x mb-3 text-primary"></i>
+                                        <h5>Special Requests</h5>
+                                        <p>Contact us if you have any special requirements</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <a href="index.html" class="btn btn-primary btn-lg me-3">Return to Home</a>
+                        <a href="profile.html" class="btn btn-outline-primary btn-lg">View My Bookings</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>About Us</h3>
+                    <p>Royal Bengal Hotel offers the finest accommodations and services in the heart of Dhaka.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html#home" class="text-white">Home</a></li>
+                        <li><a href="index.html#rooms" class="text-white">Rooms</a></li>
+                        <li><a href="index.html#amenities" class="text-white">Amenities</a></li>
+                        <li><a href="index.html#reviews" class="text-white">Reviews</a></li>
+                        <li><a href="index.html#contact" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p class="mb-0">&copy; 2024 Royal Bengal Hotel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/auth.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get booking details from localStorage
+            const bookingDetails = JSON.parse(localStorage.getItem('lastBooking'));
+            if (!bookingDetails) {
+                window.location.href = 'index.html';
+                return;
+            }
+
+            // Format price with commas
+            const formatPrice = (price) => {
+                return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            };
+
+            // Update booking details
+            document.getElementById('bookingId').textContent = bookingDetails.id;
+            document.getElementById('roomType').textContent = bookingDetails.roomType;
+            document.getElementById('checkIn').textContent = new Date(bookingDetails.checkIn).toLocaleDateString();
+            document.getElementById('checkOut').textContent = new Date(bookingDetails.checkOut).toLocaleDateString();
+            document.getElementById('guests').textContent = bookingDetails.guests;
+            document.getElementById('nights').textContent = bookingDetails.nights;
+            document.getElementById('amount').textContent = `৳${formatPrice(bookingDetails.totalAmount)}`;
+        });
+    </script>
+</body>
+</html> 

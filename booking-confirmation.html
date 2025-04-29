@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation - Royal Bengal Hotel</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <h1 class="m-0">Royal Bengal Hotel</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#rooms">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#amenities">Amenities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link login-btn" href="#" id="logoutBtn">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Booking Confirmation Section -->
+    <section class="booking-confirmation py-5 mt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card booking-card">
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-check-circle text-success fa-4x mb-3"></i>
+                                <h2>Booking Confirmed!</h2>
+                                <p class="text-muted">Your booking has been successfully created.</p>
+                            </div>
+
+                            <div class="booking-details mb-4">
+                                <h4>Booking Details</h4>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p><strong>Booking ID:</strong> <span id="bookingId"></span></p>
+                                        <p><strong>Room Type:</strong> <span id="roomType"></span></p>
+                                        <p><strong>Check-in:</strong> <span id="checkIn"></span></p>
+                                        <p><strong>Check-out:</strong> <span id="checkOut"></span></p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><strong>Guests:</strong> <span id="guests"></span></p>
+                                        <p><strong>Total Nights:</strong> <span id="nights"></span></p>
+                                        <p><strong>Room Rate:</strong> <span id="roomRate"></span></p>
+                                        <p><strong>Total Amount:</strong> <span id="totalAmount"></span></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <div class="payment-section">
+                                <h4>Payment Details</h4>
+                                <div class="row">
+                                    <div class="col-12 mb-4">
+                                        <div class="payment-methods">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/200px-Mastercard-logo.svg.png" alt="Mastercard" height="30">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/200px-Visa_Inc._logo.svg.png" alt="Visa" height="30">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/200px-PayPal.svg.png" alt="PayPal" height="30">
+                                            <img src="https://www.bkash.com/sites/all/themes/bkash/logo.png" alt="bKash" height="30">
+                                            <img src="https://www.dutchbanglabank.com/img/dbbl-rocket.png" alt="Rocket" height="30">
+                                            <img src="https://nagad.com.bd/wp-content/uploads/2019/03/Nagad-Logo-150.png" alt="Nagad" height="30">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <form id="payment-form" class="needs-validation" novalidate>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="cc-name" class="form-label">Name on card</label>
+                                            <input type="text" class="form-control" id="cc-name" required>
+                                            <div class="invalid-feedback">
+                                                Name on card is required
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="cc-number" class="form-label">Card number</label>
+                                            <input type="text" class="form-control" id="cc-number" required>
+                                            <div class="invalid-feedback">
+                                                Credit card number is required
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 mb-3">
+                                            <label for="cc-expiration-mm" class="form-label">Expiration Month</label>
+                                            <select class="form-select" id="cc-expiration-mm" required>
+                                                <option value="">Month</option>
+                                                <option value="01">01</option>
+                                                <option value="02">02</option>
+                                                <!-- Add all months -->
+                                                <option value="12">12</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label for="cc-expiration-yy" class="form-label">Expiration Year</label>
+                                            <select class="form-select" id="cc-expiration-yy" required>
+                                                <option value="">Year</option>
+                                                <option value="24">2024</option>
+                                                <option value="25">2025</option>
+                                                <option value="26">2026</option>
+                                                <option value="27">2027</option>
+                                                <option value="28">2028</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label for="cc-cvv" class="form-label">CVV</label>
+                                            <input type="text" class="form-control" id="cc-cvv" required>
+                                            <div class="invalid-feedback">
+                                                Security code required
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-4">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="save-card">
+                                            <label class="form-check-label" for="save-card">Save this card for future bookings</label>
+                                        </div>
+                                    </div>
+                                    <hr class="mb-4">
+                                    <button class="btn btn-primary btn-lg w-100" type="submit">
+                                        <i class="fas fa-lock me-2"></i>Pay <span id="paymentAmount"></span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>About Us</h3>
+                    <p>Royal Bengal Hotel offers the finest accommodations and services in the heart of Dhaka.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html#home" class="text-white">Home</a></li>
+                        <li><a href="index.html#rooms" class="text-white">Rooms</a></li>
+                        <li><a href="index.html#amenities" class="text-white">Amenities</a></li>
+                        <li><a href="index.html#reviews" class="text-white">Reviews</a></li>
+                        <li><a href="index.html#contact" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p class="mb-0">&copy; 2024 Royal Bengal Hotel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/auth.js"></script>
+    <script src="js/booking.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if user is logged in
+            if (!auth.isLoggedIn()) {
+                alert('Please login to complete your booking');
+                window.location.href = 'login.html';
+                return;
+            }
+
+            // Get booking details from localStorage
+            const bookingDetails = JSON.parse(localStorage.getItem('currentBooking'));
+            if (!bookingDetails) {
+                alert('No booking details found. Please start over.');
+                window.location.href = 'index.html';
+                return;
+            }
+
+            const {
+                roomType,
+                roomPrice,
+                checkIn,
+                checkOut,
+                guests,
+                nights,
+                totalAmount,
+                specialRequests,
+                adults,
+                children
+            } = bookingDetails;
+
+            // Format price with commas
+            const formatPrice = (price) => {
+                return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            };
+
+            // Generate booking ID
+            const bookingId = 'RBH' + Date.now().toString().slice(-6);
+
+            // Update booking details
+            document.getElementById('bookingId').textContent = bookingId;
+            document.getElementById('roomType').textContent = roomType;
+            document.getElementById('checkIn').textContent = new Date(checkIn).toLocaleDateString();
+            document.getElementById('checkOut').textContent = new Date(checkOut).toLocaleDateString();
+            document.getElementById('guests').textContent = guests;
+            document.getElementById('nights').textContent = nights;
+            document.getElementById('roomRate').textContent = `৳${formatPrice(roomPrice)}/night`;
+            document.getElementById('totalAmount').textContent = `৳${formatPrice(totalAmount)}`;
+            document.getElementById('paymentAmount').textContent = `৳${formatPrice(totalAmount)}`;
+
+            // Card number validation
+            const ccNumber = document.getElementById('cc-number');
+            ccNumber.addEventListener('input', function(e) {
+                let value = e.target.value.replace(/\D/g, '');
+                if (value.length > 16) value = value.slice(0, 16);
+                e.target.value = value;
+            });
+
+            // CVV validation
+            const cvv = document.getElementById('cc-cvv');
+            cvv.addEventListener('input', function(e) {
+                let value = e.target.value.replace(/\D/g, '');
+                if (value.length > 3) value = value.slice(0, 3);
+                e.target.value = value;
+            });
+
+            // Handle payment form submission
+            const paymentForm = document.getElementById('payment-form');
+            paymentForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                if (!paymentForm.checkValidity()) {
+                    e.stopPropagation();
+                    paymentForm.classList.add('was-validated');
+                    return;
+                }
+
+                // Get current user
+                const user = auth.getCurrentUser();
+                if (!user) {
+                    alert('Please login to complete your booking');
+                    window.location.href = 'login.html';
+                    return;
+                }
+
+                // Show loading state
+                const submitBtn = paymentForm.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Processing...';
+
+                // Create booking data
+                const bookingData = {
+                    id: bookingId,
+                    userId: user.id,
+                    roomType,
+                    roomPrice,
+                    checkIn,
+                    checkOut,
+                    nights,
+                    guests,
+                    adults,
+                    children,
+                    totalAmount,
+                    specialRequests,
+                    paymentMethod: document.getElementById('cc-number').value ? 'Credit Card' : 'Other',
+                    cardName: document.getElementById('cc-name').value,
+                    saveCard: document.getElementById('save-card').checked,
+                    status: 'confirmed',
+                    bookingDate: new Date().toISOString()
+                };
+
+                // Simulate payment processing
+                setTimeout(() => {
+                    // Get existing bookings
+                    const bookings = JSON.parse(localStorage.getItem('bookings')) || [];
+                    bookings.push(bookingData);
+                    localStorage.setItem('bookings', JSON.stringify(bookings));
+
+                    // Update user's bookings
+                    if (!user.bookings) {
+                        user.bookings = [];
+                    }
+                    user.bookings.push(bookingId);
+                    auth.updateUser(user);
+
+                    // Clear current booking
+                    localStorage.removeItem('currentBooking');
+
+                    // Store success data
+                    localStorage.setItem('lastBooking', JSON.stringify(bookingData));
+
+                    // Redirect to success page
+                    window.location.href = 'booking-success.html';
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html> 
